@@ -11,7 +11,6 @@ div {
 /* The body of the news website */
 #home {
   height: 1200px;
-
 }
 
 /* style for the header */
@@ -23,12 +22,15 @@ div {
 .logo {
   display: flex;
   align-items: center;
-  margin: 15px 30px;
+  margin-left: 30px;
+  width: 100%;
 }
 
 .header {
-  position: fixed; /* WARNING: position ne fonctionne pas !!! */
+  position: fixed;
   width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
   z-index: 2;
   background-color: white;
   font-family: "Verdana", sans-serif;
@@ -38,20 +40,22 @@ div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+}
+
+nav {
+  display: flex;
+  margin-right: 30px;
+}
+
+span {
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: underline;
+  color: black;
 }
 
 .menu {
   margin-right: 15px;
-}
-
-.menu ul {
-  list-style: none;
-}
-
-li {
-    display: inline;
-    margin: 15px;
 }
 
 .menu a {
@@ -64,14 +68,17 @@ li {
   position: relative;
   top: 80px;
   z-index: 1;
-  justify-content: space-around;
   align-items: flex-start;
   padding-top: 30px;
+  margin: 0 15px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  height: 500px;
+  margin-right: 15px;
 }
 
 .column.large {
@@ -85,7 +92,7 @@ li {
 .column.small {
   width: 240px;
 }
-
+/*
 .image {
   display: flex;
   height: 300px;
@@ -103,6 +110,10 @@ li {
   background-image: url("../images/img-story-3.png");
 }
 
+.image.story1 {
+  background-image: url("../images/img-story-1.png");
+}
+
 .story {
   font-family: "Georgia", sans-serif;
   font-size: 17px;
@@ -115,3 +126,4 @@ li {
   font-size: 30px;
   color: white;
 }
+*/
