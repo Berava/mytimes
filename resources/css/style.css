@@ -4,14 +4,13 @@
   padding: 0;
 }
 
-/* For the tests */
+/* For the tests
 div {
   border: 1px solid black;
-}
+} */
 
 /* The body of the news website */
 #home {
-  height: 1200px;
 }
 
 /* style for the header */
@@ -64,15 +63,15 @@ a {
 .container {
   display: flex;
   justify-content: flex-start;
-  margin: 0 15px;
   position: relative;
-  top : 100px;
+  top : 80px;
+  padding-top: 20px;
 }
 
 /* style for the 3 columns */
 
 .column {
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
 .column.large {
@@ -90,7 +89,19 @@ a {
 .column.small {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 240px;
+}
+
+.story {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 /* Style for articles */
@@ -99,5 +110,92 @@ a {
 }
 
 .text p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
 
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  height: 40px;
+  border-bottom: 1px solid black;
+  padding-right: 50px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* images */
+.image {
+  height: 300px;
+  display: flex;
+}
+
+.image p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+#text-main {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+#image-main {
+  background-image: url("../images/img-story-main.png");
+}
+
+#image-main.image {
+  display: flex;
+  align-items: center;
+}
+
+#image-story1 {
+  background-image: url("../images/img-story-1.png");
+}
+
+#image-story1.image {
+  display: flex;
+  align-items: center;
+  margin-top: 15px
+}
+
+#image-story2 {
+  background-image: url("../images/img-story-2.png");
+  margin-top: 15px;
+}
+
+#image-story2.image {
+  display: flex;
+  align-items: center;
+}
+
+#image-story3 {
+  background-image: url("../images/img-story-3.png");
+  margin-top: 15px;
+}
+
+#image-story3.image {
+  display: flex;
+  align-items: center;
 }
